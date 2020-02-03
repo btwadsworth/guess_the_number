@@ -20,7 +20,7 @@ def get_guess():
     while True:
         try:
             return int(input('Guess the secret number? '))
-        except:
+        except ValueError:
             print('Must enter a positive integer.')
 
 
